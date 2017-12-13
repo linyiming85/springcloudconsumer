@@ -1,7 +1,10 @@
+register:
+  hostname: 127.0.0.1
+  port: 8761
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.0.109.25:8761/eureka/
+      defaultZone: http://${register.hostname}:${register.port}/eureka/
 server:
   port: 8764
 spring:

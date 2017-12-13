@@ -1,6 +1,5 @@
 package com.unicom.controller;
 
-import com.unicom.entity.User;
 import com.unicom.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,4 +23,5 @@ public class UserServiceController {
     public String getUser(@RequestParam String userName){
         return userService.queryUser(userName);
     }
+
 }
